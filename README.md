@@ -8,7 +8,7 @@
 
 ## 简介
 
-一套实用的SpringCloud系列教程，涵盖了大部分核心组件的使用，基于最新的Greenwich版本。
+一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。20篇文章，篇篇精华，30个Demo，涵盖大部分应用场景。
 
 ## 目录
 
@@ -25,6 +25,13 @@
 - [Spring Cloud Consul：服务治理与配置中心](https://juejin.im/post/5db05582f265da4d4c20180f)
 - [Spring Cloud Gateway：新一代API网关服务](https://juejin.im/post/5db6eed6518825644076d0b6)
 - [Spring Boot Admin：微服务应用监控](https://juejin.im/post/5db98a2d518825649c730f81)
+- [Spring Cloud Security：Oauth2使用入门](https://juejin.im/post/5dc013bae51d456e817cec30)
+- [Spring Cloud Security：Oauth2结合JWT使用](https://juejin.im/post/5dc2bec6f265da4d4f65bebe)
+- [Spring Cloud Security：Oauth2实现单点登录](https://juejin.im/post/5dc95a675188256e040db43f)
+- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
+- [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
+- [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
+- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
 
 ## 项目结构
 
@@ -49,7 +56,17 @@ springcloud-learning
 ├── api-gateway -- gateway作为网关的测试服务
 ├── admin-server -- admin监控中心服务
 ├── admin-client -- admin监控中心监控的应用服务
-└── admin-security-server -- 带登录认证的admin监控中心服务
+├── admin-security-server -- 带登录认证的admin监控中心服务
+├── oauth2-server -- oauth2认证测试服务
+├── oauth2-jwt-server -- 使用jwt的oauth2认证测试服务
+├── oauth2-client -- 单点登录的oauth2客户端服务
+├── nacos-config-client -- 用于演示nacos作为配置中心的nacos客户端
+├── nacos-user-service -- 注册到nacos的提供User对象CRUD接口的服务
+├── nacos-ribbon-service -- 注册到nacos的ribbon服务调用测试服务
+├── sentinel-service -- sentinel功能测试服务
+├── seata-order-service -- 整合了seata的订单服务
+├── seata-storage-service -- 整合了seata的库存服务
+└── seata-account-service -- 整合了seata的账户服务
 ```
 
 ## 公众号
